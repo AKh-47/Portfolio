@@ -1,0 +1,138 @@
+.home{
+    font-family: $font-family, sans-serif, serif;
+    min-height: 100vh;
+    padding: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+    .code{
+        position: absolute;
+        font-size: 25rem;
+        z-index: -1;
+        opacity: .075;
+    }
+
+
+    h1{
+        font-size: 4rem;
+        margin-top:1rem;
+
+        span{
+            @include text-gradient
+        }
+    }
+
+    .indicator{
+        height: 4rem;
+        width: 2rem;
+        border: 3px solid #fefefe;
+        border-radius: 25px;
+        position: absolute;
+        bottom: 5rem;
+    }
+
+
+}
+
+.projects{
+    font-family: $font-family, sans-serif, serif;
+    min-height: 100vh;
+    padding: 5rem 4rem;
+
+    h1{
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        position: relative;
+
+        &::after{
+            content: "Projects";
+            position: absolute;
+            font-size: 15rem;
+        opacity: .05;
+        left: 0;
+        top: -2rem;
+        z-index: -1;
+        }
+    }
+
+
+
+
+
+    .project{
+        background-color: #2e2e2e;
+        border-radius: 10px;
+        padding: 2rem;
+        display: flex;
+        margin: 3rem 0;
+        display: flex;
+
+   
+        img{
+            background-color: white;
+            min-width: 25rem;
+            height: 15rem;
+            border-radius: 15px;
+        }
+
+
+    .content{
+        padding: 0 1rem;
+
+        span{
+            display: inline-block;
+            background-color: #444;
+            padding: .5rem 1rem;
+            border-radius: 500px;
+            margin: 1rem;
+        }
+
+        h2{
+            font-size: 2.5rem;
+            // border-bottom: 1px solid #fefefe;
+            margin: 0 1rem;
+            padding-bottom: .2rem;
+
+
+
+            span{
+                display: inline-block;
+                font-size: 1rem;
+                color: orangered;
+            background-color: #343434;
+            margin-left: 1rem;
+            transform: translateY(-.4rem);
+            }
+
+        }
+
+
+        p{
+            margin: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    }
+
+    .alt{
+        img{
+            order: 1;
+        }
+
+        h2{
+            text-align: right;
+            margin-left: 1rem;
+        }
+
+        .content{
+            text-align: right;
+        }
+
+    }
+
+}
