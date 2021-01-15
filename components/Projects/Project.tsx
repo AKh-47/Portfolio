@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+import Tech from "./Tech";
 
 interface Props {
   alt: boolean;
@@ -13,9 +14,7 @@ export default function Project({ alt }: Props): ReactElement {
           Project Name
           {/* <span>Ongoing</span> */}{" "}
         </h2>
-        <span>React</span>
-        <span>TyepScript</span>
-        <span>Node.js</span>
+        <Tech />
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem libero
           hic minus et dolore iusto laudantium laborum eveniet voluptatum omnis

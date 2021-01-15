@@ -1,0 +1,44 @@
+.skills{
+    font-family: $font-family, sans-serif, serif;
+    padding: 5rem 4rem;
+
+
+    h1{
+        font-size: 4rem;
+        // margin-top:1rem;
+        position: relative;
+
+        &::after{
+            content: "Skills";
+            position: absolute;
+            font-size: 15rem;
+        opacity: .05;
+        left: 0;
+        top: -4rem;
+        z-index: -1;
+        }
+    }
+
+
+    main{
+        // border: 1px solid #fefefe;
+        min-height: 25rem;
+        display: flex;
+        // flex-direction: column;
+
+
+        section{
+        // border: 1px solid #fefefe;
+        background-color: #282828;
+        margin: 0 1rem;
+        border-radius: 10px;
+padding: 1rem;
+    flex: 1;
+    // width: 60%;
+        }
+
+    }
+
+ 
+
+}

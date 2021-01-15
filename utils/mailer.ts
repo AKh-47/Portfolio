@@ -12,7 +12,7 @@ interface MailOptions {
 
 export default async (mailOptions: MailOptions) => {
   if (!process.env.EMAIL || !process.env.PASS) {
-    throw new Error("Environment variables missing");
+    throw new Error("Environment Invalid");
   }
 
   return new Promise((resolve, reject) => {
