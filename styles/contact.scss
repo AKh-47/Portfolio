@@ -1,0 +1,78 @@
+.contact{
+    font-family: $font-family, sans-serif, serif;
+    padding: 5rem 4rem;
+
+
+    main{
+        display: flex;
+    }
+
+    form{
+        flex: 6.5;
+        border-right: 1px solid #fefefe88;
+        padding-right: 5rem;
+    }
+ 
+
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            height: 70%;
+            border-radius: 10px;
+            opacity: .05;
+        }
+    }
+
+
+    h1{
+        font-size: 5rem;
+        // margin-top:1rem;
+        position: relative;
+        margin: 1rem;
+
+
+        &::after{
+            content: "Contact";
+            position: absolute;
+            font-size: 15rem;
+        opacity: .05;
+        left: 0;
+        top: -4rem;
+        z-index: -1;
+        }
+    }
+
+    .input{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+
+        label{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        input,textarea{
+            padding: .5rem;
+            // width: 65%;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            background-color: #fffe;
+        }
+
+        textarea{
+            height: 9rem;
+        }
+    }
+
+    button{
+        margin: 1rem;
+        padding: .5rem 1rem;
+        font-size: 1.5rem;
+        // font-weight: bold;
+        border-radius: 5px;
+    }
+}

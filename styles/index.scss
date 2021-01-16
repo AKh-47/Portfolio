@@ -6,6 +6,24 @@ html {
   scroll-behavior: smooth;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #757575;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  // background: linear-gradient(to bottom, #7ed56f88, #28b48588);
+  background-color: #ebf7fd;
+}
+
+
 :root {
   @include respond(tab-land) {
     font-size: 14px;
@@ -142,4 +160,6 @@ button {
 @import "./home.scss";
 @import "./projects.scss";
 @import "./skills.scss";
+@import "./contact.scss";
+
 

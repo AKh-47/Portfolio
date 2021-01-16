@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <nav className="navbar">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
       <Component {...pageProps} />
     </>
