@@ -1,5 +1,4 @@
 import React, { ReactElement } from "react";
-import Skill from "./Skill";
 
 /*
 HTML
@@ -52,6 +51,22 @@ export default function Skills(): ReactElement {
           <Skill name={"Python"} />
         </section>
       </main>
+    </div>
+  );
+}
+
+function Skill({ name }: { name: string }): ReactElement {
+  return (
+    <div className="skill">
+      <img
+        style={{
+          background: name.toLowerCase() === "next.js" ? "white" : null,
+          borderRadius: name.toLowerCase() === "next.js" ? "50%" : null,
+        }}
+        src={`/skills/${name.toLowerCase()}.png`}
+        alt={name}
+      />
+      <span>{name}</span>
     </div>
   );
 }

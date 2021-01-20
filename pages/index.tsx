@@ -1,9 +1,10 @@
 import React, { ReactElement, Fragment } from "react";
-import Contact from "../components/Contact";
+import Contact from "../sections/Contact";
 
-import Home from "../components/Home";
-import Projects from "../components/Projects/Projects";
-import Skills from "../components/Skills/Skills";
+import Home from "../sections/Home";
+import Projects from "../sections/Projects";
+import Skills from "../sections/Skills";
+import About from "../sections/About";
 
 export default function Index(): ReactElement {
   return (
@@ -11,6 +12,7 @@ export default function Index(): ReactElement {
       <Home />
       <Projects />
       <Skills />
+      <About />
       <Contact />
     </Fragment>
   );

@@ -8,10 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "next": "10.0.4",
     "nodemailer": "^6.4.17",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-toast-notifications": "^2.4.0",
     "sass": "^1.30.0"
   },
   "devDependencies": {

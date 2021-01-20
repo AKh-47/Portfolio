@@ -3,14 +3,13 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-interface MailOptions {
-  from: string;
-  to: string;
-  subject: string;
-  text: string;
+interface Props {
+  name: string;
+  email: string;
+  message: string;
 }
 
-export default async (mailOptions: MailOptions) => {
+export default async ({ name, email, message }: Props) => {
   if (!process.env.EMAIL || !process.env.PASS) {
     throw new Error("Environment Invalid");
   }
@@ -24,9 +23,25 @@ export default async (mailOptions: MailOptions) => {
       },
     });
 
-    transporter.sendMail(mailOptions, (err, info) => {
-      if (err) reject(new Error("Coudn't Send Mail"));
-      else resolve(info);
-    });
+    const html = `
+      <h2>${name}</h2> 
+      <h4>${email}</h4>
+      <p>${message}</p>
+    `;
+
+    transporter.sendMail(
+      {
+        from: "akhildoesdev@gmail.com",
+        to: "akhildoesdev@gmail.com, kalaakki@gmail.com",
+        subject: "Portfolio response",
+        html,
+      },
+      (err, info) => {
+        console.log(info);
+
+        if (err) reject(new Error("Coudn't Send Mail"));
+        else resolve(info);
+      }
+    );
   });
 };

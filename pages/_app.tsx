@@ -1,6 +1,7 @@
 import "../styles/index.scss";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { ToastProvider } from "react-toast-notifications";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -20,9 +21,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       <nav className="navbar">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-      <Component {...pageProps} />
+      <ToastProvider>
+        <Component {...pageProps} />
+      </ToastProvider>
     </>
   );
 }
