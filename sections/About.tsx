@@ -1,8 +1,10 @@
 import React, { ReactElement } from "react";
 
-interface Props {}
+interface Props {
+  about: string;
+}
 
-export default function About({}: Props): ReactElement {
+export default function About({ about }: Props): ReactElement {
   return (
     <div id="about" className="about">
       <h1>About Me</h1>
@@ -11,10 +13,7 @@ export default function About({}: Props): ReactElement {
         <div className="left">
           <img src="/akhil.jpg" alt="" />
         </div>
-        <div className="right">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum rerum
-          dolorum repellendus vero, reprehenderit obcaecati et suscipit
-        </div>
+        <div className="right">{about}</div>
       </main>
     </div>
   );

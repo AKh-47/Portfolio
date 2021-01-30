@@ -1,17 +1,31 @@
 export default {
   projects: [
     {
-      name: "",
-      image: "",
-      stack: ["React,Node.js"],
-      repo: "",
-      site: "",
+      name: "TypeRacer clone",
+      image: "/projects/typeracer.png",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad esse id voluptate fuga minus ab quia nam cumque officiis animi recusandae molestiae doloribus beatae ex culpa deserunt optio, neque soluta.",
+      stack: [
+        "React",
+        "TypeScript",
+        "Sass",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "GraphQL",
+        "Socket.io",
+      ],
+      repo: "https://github.com/JeremyBearimy83/typeracer-clone/tree/master",
+      site: "https://github.com/JeremyBearimy83/typeracer-clone/tree/master",
     },
+
     {
       name: "",
       image: "",
-      stack: ["React,Node.js"],
-      repo: "",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad esse id voluptate fuga minus ab quia nam cumque officiis animi recusandae molestiae doloribus beatae ex culpa deserunt optio, neque soluta.",
+      stack: ["React", "Node.js"],
+      repo: "https://github.com/JeremyBearimy83/typeracer-clone/tree/master",
       site: "",
     },
   ],

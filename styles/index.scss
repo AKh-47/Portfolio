@@ -122,6 +122,11 @@ button {
   top: 0;
   width: 100%;
 
+  @include respond(phone){
+   justify-content: center;
+
+    }
+
 
   a{
     margin: 1rem;

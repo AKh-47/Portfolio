@@ -1,25 +1,16 @@
 import React, { ReactElement } from "react";
 
-/*
-HTML
-CSS
-SASS
-JavaScript
-Typescript
-React
-Next.js
-
-Node.js
-Express.js
-MongoDB
-
-GraphQL
-Socket.io
-*/
-
 // https://css-tricks.com/animate-a-container-on-mouse-over-using-perspective-and-transform/
 
-export default function Skills(): ReactElement {
+interface Props {
+  skills: {
+    frontEnd: string[];
+    backEnd: string[];
+    misc: string[];
+  };
+}
+
+export default function Skills({ skills }: Props): ReactElement {
   return (
     <div id="skills" className="skills">
       <h1>Skills</h1>
@@ -27,28 +18,23 @@ export default function Skills(): ReactElement {
         <section>
           <h2>Front End</h2>
           <img src="/skills/react.png" alt="" className="background" />
-          <Skill name={"HTML5"} />
-          <Skill name={"CSS3"} />
-          <Skill name={"SASS"} />
-          <Skill name={"JavaScript"} />
-          <Skill name={"React"} />
-          <Skill name={"Next.js"} />
+          {skills.frontEnd.map((skill) => (
+            <Skill name={skill} />
+          ))}
         </section>
         <section>
           <h2>Back End</h2>
           <img src="/skills/node.js.png" alt="" className="background" />
-          <Skill name={"Node.js"} />
-          <Skill name={"Express.js"} />
-          <Skill name={"MongoDB"} />
-          <Skill name={"Firebase"} />
+          {skills.backEnd.map((skill) => (
+            <Skill name={skill} />
+          ))}
         </section>
         <section>
           <h2>Miscellaneous</h2>
           <img src="/skills/python.png" alt="" className="background" />
-          <Skill name={"TypeScript"} />
-          <Skill name={"GraphQL"} />
-          <Skill name={"Socket.io"} />
-          <Skill name={"Python"} />
+          {skills.misc.map((skill) => (
+            <Skill name={skill} />
+          ))}
         </section>
       </main>
     </div>

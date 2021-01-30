@@ -8,18 +8,59 @@
     justify-content: center;
     position: relative;
 
+    @include respond(tiny-phone2){
+        padding: 5rem 2rem;
+    }
+
 
     .code{
         position: absolute;
         font-size: 25rem;
         z-index: -1;
         opacity: .075;
+
+        @include respond(tab-port2){
+            font-size: 22rem;
+    
+            }
+
+            @include respond(phone2){
+                font-size: 18rem;
+        
+                }
+
+                @include respond(small-phone2){
+                    font-size: 16rem;                 
+                     }
+
+           
+
     }
 
 
     h1{
         font-size: 4rem;
         margin-top:1rem;
+
+        @include respond(tab-port2){
+        font-size: 3.5rem;
+
+        }
+
+        @include respond(phone2){
+            font-size: 2.75rem;
+         
+             }
+
+             @include respond(small-phone2){
+                font-size: 2.25rem;
+             
+                 }
+
+                 @include respond(tiny-phone2){
+                    font-size: 1.8rem;
+                }
+            
 
         span{
             @include text-gradient
