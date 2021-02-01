@@ -71,6 +71,33 @@ export default function Contact({}: Props): ReactElement {
           />
         </div>
       </main>
+      <div className="social">
+        <a href="https://github.com/akh-47">
+          <i className="fab fa-github"></i>
+          Github
+        </a>
+        <a href="https://www.linkedin.com/in/akhil-kala-b185131b0/">
+          <i className="fab fa-linkedin"></i>
+          Linkedin
+        </a>
+        <a href="https://twitter.com/akhilkala1">
+          <i className="fab fa-twitter"></i>
+          Twitter
+        </a>
+        <a>
+          <i className="fab fa-dev"></i>
+          Dev
+        </a>
+        <a>
+          <i className="fas fa-envelope"></i>
+          Mail
+        </a>
+        <a>
+          <i className="fas fa-file-alt"></i>
+          Resume
+        </a>
+      </div>
+      <footer>Designed and Developed by Akhil Kala</footer>
     </div>
   );
 }
