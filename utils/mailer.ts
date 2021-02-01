@@ -33,7 +33,7 @@ export default async ({ name, email, message }: Props) => {
       {
         from: "akhildoesdev@gmail.com",
         to: "akhildoesdev@gmail.com, kalaakki@gmail.com",
-        subject: "Portfolio response",
+        subject: "Portfolio Response",
         html,
       },
       (err, info) => {
