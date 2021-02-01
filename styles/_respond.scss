@@ -61,7 +61,6 @@
 
     @if $breakpoint== phone2 {
       @media (max-width: 625px) {
-  
         @content;
       }
     }
@@ -82,6 +81,13 @@
   
     @if $breakpoint== tab-port {
       @media (max-width: 56.25em) {
+        //900px
+        @content;
+      }
+    }
+
+    @if $breakpoint== tab-port1 {
+      @media (max-width: 950px) {
         //900px
         @content;
       }

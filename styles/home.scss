@@ -51,12 +51,12 @@
 
 
     h1{
-        font-size: 3.5rem;
+       font-size: 3rem;
         margin-top:1rem;
 
-        @include respond(tab-port2){
-        font-size: 3.5rem;
 
+        @include respond(tab-land){
+        font-size: 2.5rem;
         }
 
         @include respond(phone2){

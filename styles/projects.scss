@@ -160,6 +160,9 @@
 
         .content{
             text-align: right;
+            @include respond(medium-phone){
+                text-align: center;
+                 }
         }
 
         .links{
