@@ -24,9 +24,9 @@ export default async ({ name, email, message }: Props) => {
     });
 
     const html = `
-      <h2>${name}</h2> 
-      <h4>${email}</h4>
-      <p>${message}</p>
+      <h2>Name: ${name}</h2> 
+      <h4>Email: ${email}</h4>
+      <p>Message: ${message}</p>
     `;
 
     transporter.sendMail(

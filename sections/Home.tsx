@@ -21,18 +21,25 @@ export default function Home(): ReactElement {
         <a href="https://twitter.com/akhilkala1">
           <i className="fab fa-twitter"></i>
         </a>
+
         <a
-        // data-hint="Mail"
+          href="mailto:akhildoesdev@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fas fa-envelope"></i>
         </a>
       </div>
-      <div className="resume">
+      <a
+        target="_blank"
+        href="https://resume.io/r/dRVksLNKC"
+        className="resume"
+      >
         <a>
           <i className="fas fa-file-alt"></i>
         </a>
         View Resume
-      </div>
+      </a>
       <a href="#projects">
         <div className="indicator"></div>
       </a>
