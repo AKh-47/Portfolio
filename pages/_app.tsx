@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-      <ToastProvider>
+      <ToastProvider placement="top-center" autoDismissTimeout="1200">
         <Component {...pageProps} />
       </ToastProvider>
     </>

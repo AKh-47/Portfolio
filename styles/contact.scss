@@ -1,16 +1,69 @@
 .contact{
     font-family: $font-family, sans-serif, serif;
-    padding: 5rem 4rem;
+    padding: 5rem 4rem 1rem 4rem;
 
+
+
+    footer{
+        background-color: #212121;
+        text-align: center;
+        margin-top: 1rem;
+
+    }
 
     main{
         display: flex;
+        @include respond(tab-land){
+            flex-direction: column;
+        }
+    }
+
+    .social{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        justify-content: space-between;
+        border-top:1px solid #fefefe11;
+        padding-top: .5rem;
+
+
+        @include respond(phone){
+            grid-template-columns: repeat(2,1fr);
+            justify-items: center;
+            font-size: 1.5rem;
+
+            }
+        a{
+            margin: .75rem;
+            cursor: pointer;
+            transition: .2s all;
+            display: flex;
+            align-items: center;
+
+            @include respond(phone){
+                width: 8rem;
+                // background-color: red;
+                }
+
+            i{
+                margin-right: .5rem;
+                font-size: 1.5rem;
+            }
+
+            &:hover{
+                @include text-gradient
+            }
+        }
     }
 
     form{
         flex: 6.5;
         // border-right: 1px solid #fefefe88;
         padding-right: 5rem;
+
+        @include respond(small-phone2){
+        padding-right: 0;
+        }
+    
     }
  
 
@@ -18,8 +71,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+
+
+
         img{
-            height: 70%;
+
+            @include respond(tab-land){
+                height: 10rem;
+            }
+            
             border-radius: 10px;
             // opacity: .05;
         }

@@ -1,4 +1,23 @@
-export default {
+interface Project {
+  name: string;
+  image: string;
+  description: string;
+  stack: string[];
+  repo: string;
+  site: string;
+}
+
+interface Data {
+  projects: Project[];
+  about: string;
+  skills: {
+    frontEnd: string[];
+    backEnd: string[];
+    misc: string[];
+  };
+}
+
+const data: Data = {
   projects: [
     {
       name: "TypeRacer clone",
@@ -37,3 +56,5 @@ export default {
     misc: ["TypeScript", "GraphQL", "Socket.io", "Python"],
   },
 };
+
+export default data;
