@@ -13,9 +13,10 @@
 
     main{
         display: flex;
-        @include respond(tab-land){
-            flex-direction: column;
-        }
+        flex-direction: column;
+
+        // @include respond(tab-land){
+        // }
     }
 
     .social{
@@ -60,9 +61,15 @@
         // border-right: 1px solid #fefefe88;
         padding-right: 5rem;
 
+
+
+
         @include respond(small-phone2){
         padding-right: 0;
         }
+
+ 
+
     
     }
  
@@ -76,9 +83,10 @@
 
 
         img{
+            height: 10rem;
+
 
             @include respond(tab-land){
-                height: 10rem;
             }
             
             border-radius: 10px;

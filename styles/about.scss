@@ -2,11 +2,29 @@
     font-family: $font-family, sans-serif, serif;
     padding: 0 4rem;
 
+    @media (max-width: 424px) {
+        padding: 0 2rem;
+
+    }
+
+    @media (max-width: 343px) {
+        padding: 0 1rem;
+
+
+    }
+
     h1{
         font-size: 5rem;
         // margin-top:1rem;
         position: relative;
         margin: 1rem;
+
+        @media (max-width: 460px) {
+            font-size: 4rem;
+
+
+
+        }
 
 
         &::after{
@@ -17,6 +35,35 @@
         left: 0;
         top: -4rem;
         z-index: -1;
+
+        @media (max-width: 640px) {
+            font-size: 12rem;
+
+        }
+
+
+        @media (max-width: 550px) {
+            font-size: 10rem;
+        top: -2rem;
+
+
+        }
+
+        @media (max-width: 460px) {
+            font-size: 9rem;
+        top: -1rem;
+
+
+        }
+
+        @media (max-width: 420px) {
+            font-size: 7.5rem;
+        top: -1rem;
+
+
+        }
+
+        
         }
     }
 
@@ -24,6 +71,22 @@
         height: 60vh;
         padding-top: 6rem;
         display: flex;
+
+
+        @media (max-width: 635px) {
+            height: 70vh;
+
+
+
+        }
+
+
+        @media (max-width: 515px) {
+            height: 75vh;
+
+
+
+        }
 
 
         @include respond(medium-phone){
@@ -43,10 +106,26 @@
             padding: 5rem;
             opacity: .8;
 
+            @media (max-width: 360px) {
+                font-size: 1.75rem;
+
+    
+    
+            }
+
+
             @include respond(medium-phone){
-                padding: 1rem 5rem;
+                padding: 2rem 5rem;
                 text-align: center;
            }
+
+
+        @media (max-width: 635px) {
+            padding: 1rem;
+
+
+
+        }
 
         }
 
@@ -64,6 +143,28 @@
                 transform: translate(-50%,-50%);
 
                 border: 4px solid #fefefe;
+
+
+            @include respond(medium-phone){
+                margin-bottom: 1rem;
+           }
+
+
+        @media (max-width: 515px) {
+            width: 17rem;
+            height: 17rem;
+
+
+
+        }
+
+        @media (max-width: 360px) {
+            width: 15rem;
+            height: 15rem;
+
+
+
+        }
 
             }
         }

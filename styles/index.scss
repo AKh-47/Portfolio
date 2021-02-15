@@ -134,6 +134,15 @@ button {
     position: relative;
 
 
+    @media (max-width: 348px) {
+      margin: .75rem;
+    font-size: 1.35rem;
+
+
+
+  }
+
+
     &::after{
       content: "";
       height: 2px;

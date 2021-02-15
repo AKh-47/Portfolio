@@ -8,6 +8,7 @@ interface Project {
 }
 
 interface Data {
+  resume: string;
   projects: Project[];
   about: string;
   skills: {
@@ -18,6 +19,7 @@ interface Data {
 }
 
 const data: Data = {
+  resume: "/Akhil's Resume.pdf",
   projects: [
     {
       name: "TypeRacer clone",
