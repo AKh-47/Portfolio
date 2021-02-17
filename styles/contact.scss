@@ -3,19 +3,32 @@
     padding: 5rem 4rem 1rem 4rem;
 
 
+    @media (max-width: 424px) {
+        padding: 0 2rem;
+
+    }
+
+    @media (max-width: 343px) {
+        padding: 0 1rem;
+
+
+    }
+
+
 
     footer{
         background-color: #212121;
         text-align: center;
-        margin-top: 1rem;
+        margin: 1rem 0 .5rem 0;
 
     }
 
     main{
         display: flex;
-        @include respond(tab-land){
-            flex-direction: column;
-        }
+        flex-direction: column;
+
+        // @include respond(tab-land){
+        // }
     }
 
     .social{
@@ -60,9 +73,21 @@
         // border-right: 1px solid #fefefe88;
         padding-right: 5rem;
 
+
+        @media (max-width: 460px) {
+            padding-right: 0rem;
+
+        }
+
+
+
+
         @include respond(small-phone2){
         padding-right: 0;
         }
+
+ 
+
     
     }
  
@@ -76,9 +101,10 @@
 
 
         img{
+            height: 10rem;
+
 
             @include respond(tab-land){
-                height: 10rem;
             }
             
             border-radius: 10px;
@@ -99,6 +125,14 @@
         position: relative;
         margin: 1rem;
 
+        @media (max-width: 330px) {
+            font-size: 4rem;
+
+        }
+
+
+
+
 
         &::after{
             content: "Contact";
@@ -108,6 +142,28 @@
         left: 0;
         top: -4rem;
         z-index: -1;
+
+        @media (max-width: 640px) {
+            font-size: 12rem;
+            top: -3rem;
+        }
+
+        @media (max-width: 510px) {
+            font-size: 10.5rem;
+            top: -2rem;
+        }
+
+
+        @media (max-width: 460px) {
+            font-size: 8.5rem;
+            top: -1rem;
+        }
+
+
+        @media (max-width: 370px) {
+            font-size: 7rem;
+           
+        }
         }
     }
 

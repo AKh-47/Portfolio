@@ -1,6 +1,10 @@
 import React, { ReactElement } from "react";
 
-export default function Home(): ReactElement {
+interface Props {
+  resume: string;
+}
+
+export default function Home({ resume }: Props): ReactElement {
   return (
     <div className="home">
       <div className="code">
@@ -30,14 +34,8 @@ export default function Home(): ReactElement {
           <i className="fas fa-envelope"></i>
         </a>
       </div>
-      <a
-        target="_blank"
-        href="https://resume.io/r/dRVksLNKC"
-        className="resume"
-      >
-        <a>
-          <i className="fas fa-file-alt"></i>
-        </a>
+      <a target="_blank" href={resume} className="resume">
+        <i className="fas fa-file-alt"></i>
         View Resume
       </a>
       <a href="#projects">

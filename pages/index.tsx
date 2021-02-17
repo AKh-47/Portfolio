@@ -8,10 +8,15 @@ import Contact from "../sections/Contact";
 
 import data from "../utils/data";
 
-export default function Index({ projects, skills, about }): ReactElement {
+export default function Index({
+  projects,
+  skills,
+  about,
+  resume,
+}): ReactElement {
   return (
     <Fragment>
-      <Home />
+      <Home resume={resume} />
       <Projects projects={projects} />
       <Skills skills={skills} />
       <About about={about} />
@@ -22,9 +27,9 @@ export default function Index({ projects, skills, about }): ReactElement {
 
 export const getStaticProps = () => {
   // const data = require("../utils/data");
-  const { projects, skills, about } = data;
+  const { projects, skills, about, resume } = data;
 
   return {
-    props: { projects, skills, about },
+    props: { projects, skills, about, resume },
   };
 };

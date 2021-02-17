@@ -45,6 +45,13 @@
                     font-size: 16rem;                 
                      }
 
+                     @media (max-width: 405px) {
+           font-size: 14rem;                 
+
+                
+                  
+                    }
+
            
 
     }
@@ -72,6 +79,19 @@
                  @include respond(tiny-phone2){
                     font-size: 1.8rem;
                 }
+
+
+    @media (max-width: 405px) {
+        font-size: 1.5rem;
+
+  
+    }
+
+    @media (max-width: 348px) {
+        font-size: 1.3rem;
+
+  
+    }
             
 
         span{

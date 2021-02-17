@@ -1,7 +1,6 @@
 @import "./constants";
 @import "./respond";
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -23,7 +22,6 @@ html {
   background-color: #ebf7fd;
 }
 
-
 :root {
   @include respond(tab-land) {
     font-size: 14px;
@@ -41,7 +39,6 @@ html {
     font-size: 18px;
   }
 }
-
 
 *,
 *::after,
@@ -90,7 +87,7 @@ button {
   }
 }
 
-.hamburger{
+.hamburger {
   width: 4rem;
   height: 3rem;
   position: fixed;
@@ -103,14 +100,14 @@ button {
   display: none;
   z-index: 1;
 
-  .line{
-      background: $gradient;
-      height: .65rem;
-      border-radius: 100px;
+  .line {
+    background: $gradient;
+    height: 0.65rem;
+    border-radius: 100px;
   }
 }
 
-.navbar{
+.navbar {
   font-family: $font-family, sans-serif, serif;
   min-height: 15vh;
   z-index: 1;
@@ -122,19 +119,21 @@ button {
   top: 0;
   width: 100%;
 
-  @include respond(phone){
-   justify-content: center;
+  @include respond(phone) {
+    justify-content: center;
+  }
 
-    }
-
-
-  a{
+  a {
     margin: 1rem;
     font-size: 1.5rem;
     position: relative;
 
+    @media (max-width: 348px) {
+      margin: 0.75rem;
+      font-size: 1.35rem;
+    }
 
-    &::after{
+    &::after {
       content: "";
       height: 2px;
       width: 100%;
@@ -145,32 +144,20 @@ button {
       transform-origin: right;
       transform: scale(0);
       transition: transform 220ms ease-in;
-
     }
 
-
-    &:hover{
-      &::after{
+    &:hover {
+      &::after {
         transform-origin: left;
 
-    transform: scaleX(1);
-
-
-
+        transform: scaleX(1);
       }
     }
-
   }
-
- 
 }
-
 
 @import "./home.scss";
 @import "./projects.scss";
 @import "./skills.scss";
 @import "./contact.scss";
 @import "./about.scss";
-
-
-
